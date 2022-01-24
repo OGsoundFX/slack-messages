@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="form-box">
+    <%= simple_form_for @message do |f| %>
+      <%= f.input :title %>
+      <%= f.input :content %>
+      <%= f.input :role %>
+      <%= f.input :batch_type %>
+      <%= f.input :link %>
+      <%= f.submit %>
+    <% end %>
+  </div>
+</div>

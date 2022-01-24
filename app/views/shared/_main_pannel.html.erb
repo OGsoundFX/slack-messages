@@ -1,0 +1,9 @@
+<% if @messages.nil? %>
+  <div class="main-pannel">Nothing to display</div>
+<% else %>
+  <ul>
+    <%= @messages.each do |message| %>
+      <p><%= message.content %></p>
+    <% end %>
+  </ul>
+<% end %>
